@@ -1,0 +1,7 @@
+text
+
+# Ignore Icarus Verilog compiled output
+*.vvp
+
+# Ignore GTKWave waveform data
+*.vcd

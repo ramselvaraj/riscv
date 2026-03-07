@@ -3,7 +3,7 @@ module pc(
   input reset,
   input [31:0] pc_next,
   output reg [31:0] pc
-)
+);
 
 always @(posedge clk or posedge reset) begin
 

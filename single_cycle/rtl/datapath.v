@@ -6,4 +6,3 @@ module pc_plus4(
   assign pcplus4 = pc + 4;
 
 endmodule //pc_plus4
-

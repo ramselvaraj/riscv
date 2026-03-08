@@ -14,8 +14,8 @@ module reg_file(
 
 integer k;
 reg [31:0] registers [31:0];
-assign rdata1 = registers[rreg1];
-assign rdata2 = registers[rreg2];
+// assign rdata1 = registers[rreg1];
+// assign rdata2 = registers[rreg2];
 
 always @(posedge clk or posedge reset) begin
   if(reset) begin
@@ -24,10 +24,12 @@ always @(posedge clk or posedge reset) begin
     end
   end
 
-  elseif (regwrite) begin
+  else if (regwrite) begin
     registers[wreg] <= wdata;
   end
 
+  rdata1 <= registers[rreg1];
+  rdata2 <= registers[rreg2];
 end
 
 

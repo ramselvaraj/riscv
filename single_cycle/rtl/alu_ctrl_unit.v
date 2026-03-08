@@ -2,7 +2,7 @@ module alu_ctrl_unit(
     input [1:0] alu_op,
     input funct7,
     input [2:0] funct3,
-    output [3:0] alu_ctrl
+    output reg [3:0] alu_ctrl
 );
     always @(*) begin
     case ({alu_op,funct7, funct3})
@@ -15,5 +15,4 @@ module alu_ctrl_unit(
     
     endcase
     end
-
 endmodule //alu_ctrl_unit

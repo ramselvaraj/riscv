@@ -10,7 +10,7 @@ module reg_file(
   input [4:0] rreg1,  rreg2, wreg,
   input [31:0] wdata,
   output reg [31:0] rdata1, rdata2
-)
+);
 
 integer k;
 reg [31:0] registers [31:0];

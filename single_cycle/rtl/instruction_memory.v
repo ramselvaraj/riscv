@@ -3,7 +3,7 @@ module inst_mem(
   input reset,
   input [31:0] read_addr,
   output reg [31:0] inst_out
-)
+);
 
 integer  k;
 reg [31:0] I_Mem[63:0];

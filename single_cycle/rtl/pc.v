@@ -1,4 +1,6 @@
 module pc(
+  //program counter
+  // assign pc to pc_next at each clock cycle, reset to 0 when reset is high
   input clk,
   input reset,
   input [31:0] pc_next,

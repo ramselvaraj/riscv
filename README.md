@@ -1,3 +1,11 @@
-# RISC-V Single Cycle Processor 
+# RISC-V HDL Implementations
 
-Implemented in Verilog.
+## Single Cycle (Current)
+- Textbook followed- 
+    - "The Morgan Kaufmann Series in Computer Architecture and Design - RISCV Edition"
+- Implemented in
+    - Verilog
+
+## Multi Cycle (Future)
+
+## ..... and more 

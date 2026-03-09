@@ -6,6 +6,7 @@
 - Implemented in
     - Verilog
 - Instructions Implemented
+
 | R-Type | I-Type | S-Type | B-Type |
 |--------|--------|--------|--------|
 | ADD    | LW     | SW     | BEQ    |

@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module tb_imm_gen;
 
 reg [31:0] instr;

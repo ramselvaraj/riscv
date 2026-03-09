@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module tb_alu_ctrl_unit;
 
 reg [1:0] alu_op;

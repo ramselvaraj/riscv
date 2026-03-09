@@ -9,9 +9,8 @@
 
 | R-Type | I-Type | S-Type | B-Type |
 |--------|--------|--------|--------|
-| ADD    | LW     | SW     | BEQ    |
-| AND    |        |        |        |
-| OR     |        |        |        |
+| ADD, AND, OR    | LW     | SW     | BEQ    |
+
 
 ## Multi Cycle (Future)
 

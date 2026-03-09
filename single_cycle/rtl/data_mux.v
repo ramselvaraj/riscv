@@ -1,4 +1,6 @@
-module result_mux(
+`timescale 1ns/1ps
+
+module data_mux(
     input [31:0] alu_result,
     input [31:0] mem_data,
     input mem_to_reg,
@@ -7,4 +9,4 @@ module result_mux(
 
     assign reg_write_data = (mem_to_reg) ? mem_data : alu_result;
 
-endmodule // result_mux
+endmodule // data_mux

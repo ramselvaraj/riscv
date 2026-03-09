@@ -1,0 +1,16 @@
+./single_cycle/tb/tb_datapath.v
+./single_cycle/rtl/datapath.v
+./single_cycle/rtl/pc.v
+./single_cycle/rtl/pc_plus4.v
+./single_cycle/rtl/pc_target.v
+./single_cycle/rtl/pc_mux.v
+./single_cycle/rtl/instruction_memory.v
+./single_cycle/rtl/reg_file.v
+./single_cycle/rtl/control_unit.v
+./single_cycle/rtl/imm_gen.v
+./single_cycle/rtl/alu_ctrl_unit.v
+./single_cycle/rtl/alu.v
+./single_cycle/rtl/alu_mux.v
+./single_cycle/rtl/branch_and_zero.v
+./single_cycle/rtl/data_memory.v
+./single_cycle/rtl/data_mux.v

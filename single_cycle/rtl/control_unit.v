@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module control_unit(
     //based on the opcode, generate control signals for the datapath
     input [6:0] opcode,

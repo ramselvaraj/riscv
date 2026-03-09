@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module pc_mux(
     input [31:0] pc_plus4,
     input [31:0] branch_target,

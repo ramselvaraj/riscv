@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module pc_plus4(
   //increment PC by 4
   input [31:0] pc,

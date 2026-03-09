@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module pc(
   //program counter
   // assign pc to pc_next at each clock cycle, reset to 0 when reset is high

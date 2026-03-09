@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module alu_ctrl_unit(
     input [1:0] alu_op,
     input funct7,

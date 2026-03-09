@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module pc_target(
     input [31:0] pc,
     input [31:0] imm_ext,

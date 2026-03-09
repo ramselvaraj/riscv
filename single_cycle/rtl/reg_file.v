@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module reg_file(
   //pass values stored at rreg1 and rreg2 inside the register to rdata1,
   //rdata2 respectively

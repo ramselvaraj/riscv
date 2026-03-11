@@ -11,18 +11,18 @@ module reg_file(
   input regwrite, 
   input [4:0] rreg1,  rreg2, wreg,
   input [31:0] wdata,
-  output reg [31:0] rdata1, rdata2
+  output [31:0] rdata1, rdata2
 );
 
 integer k;
 reg [31:0] registers [31:0];
-// assign rdata1 = registers[rreg1];
-// assign rdata2 = registers[rreg2];
+assign rdata1 = registers[rreg1];
+assign rdata2 = registers[rreg2];
 
 always @(posedge clk or posedge reset) begin
   if(reset) begin
     for (k = 0; k < 32; k = k + 1) begin
-      registers[k] <= 32'b0;
+      registers[k] <= k; // Initialize register k with its index value (for testing)
     end
   end
 
@@ -30,8 +30,6 @@ always @(posedge clk or posedge reset) begin
     registers[wreg] <= wdata;
   end
 
-  rdata1 <= registers[rreg1];
-  rdata2 <= registers[rreg2];
 end
 
 

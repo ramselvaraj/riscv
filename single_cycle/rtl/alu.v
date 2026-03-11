@@ -8,7 +8,7 @@ module alu(
     output reg zero
 );
 
-always @(alu_ctrl or rs1 or rs2) begin
+always @(*) begin
 
     alu_result = 32'b0;
     zero = 1'b0;

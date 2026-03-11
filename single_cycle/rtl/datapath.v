@@ -100,7 +100,7 @@ alu_ctrl_unit alu_control_inst(
 
 alu alu_inst(
     .rs1(rdata1_top),
-    .rs2(),
+    .rs2(alu_rs2_top),
     .alu_ctrl(alu_ctrl_top),
     .alu_result(alu_result_top),
     .zero(alu_zero_top)

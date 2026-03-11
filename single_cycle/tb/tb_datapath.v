@@ -10,14 +10,30 @@ datapath dut(
     .reset(reset)
 );
 
-always #5 clk = ~clk; // 10ns clock period
+initial begin
+    #10;
+    clk = 0;
+    forever #5 clk = ~clk;   // 10 ns clock period
+end
 
 initial begin
-    clk = 0;
-    reset = 1;
+    reset = 1;   // assert reset
+    #5;          // hold for 5 time units (5 ns)
+    reset = 0;   // release reset
+end
+    
 
-    #20 reset = 0;
+initial begin
 
+
+    $dumpfile("tb_datapath.vcd");
+    $dumpvars(0, tb_datapath);
+
+    $monitor("Time: %0t | PC: %h | Instruction: %h | RegWrite: %b | ALU Result: %h", 
+             $time, dut.pc_top, dut.instruction_top, dut.regwrite_top, dut.alu_result_top);
+
+#20 reset = 0;
+    
     #1000 $finish;
 
 end

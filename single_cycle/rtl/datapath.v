@@ -2,7 +2,7 @@
 
 module datapath(
     input clk,
-    input reset,
+    input reset
 );
 
 //core datapath module, instantiates all submodules and wires them together

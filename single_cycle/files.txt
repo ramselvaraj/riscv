@@ -1,4 +1,5 @@
-./single_cycle/tb/tb_datapath.v
+./single_cycle/tb/tb_riscv_sc.V
+./single_cycle/rtl/riscv_sc.v
 ./single_cycle/rtl/datapath.v
 ./single_cycle/rtl/pc.v
 ./single_cycle/rtl/pc_plus4.v

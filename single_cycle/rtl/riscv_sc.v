@@ -8,7 +8,7 @@ module riscv_sc(
 
 datapath datapath_inst(
     .clk(clk),
-    .reset(rst),
+    .reset(rst)
 );
 
 

@@ -7,11 +7,12 @@
     - Verilog
 - Instructions Implemented
 
-| R-Type | I-Type | S-Type | B-Type |
-|--------|--------|--------|--------|
-| ADD, AND, OR    | LW     | SW     | BEQ    |
+    -| R-Type | I-Type | S-Type | B-Type |
+    |--------|--------|--------|--------|
+    | ADD, AND, OR    | LW     | SW     | BEQ    |
 
-
+- Datapath
+    - ![RISC-V Single Cycle Datapath](./images/riscv_sc_datapath.png)
 ## Multi Cycle (Future)
 
 ## ..... and more 

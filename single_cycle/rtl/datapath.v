@@ -2,8 +2,11 @@
 
 module datapath(
     input clk,
-    input reset
+    input reset,
 );
+
+//core datapath module, instantiates all submodules and wires them together
+
 
 //pc and instruction wires
 wire [31:0] pc_top, pc_next_top, instruction_top, immediate_top;

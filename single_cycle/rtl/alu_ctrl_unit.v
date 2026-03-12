@@ -6,6 +6,9 @@ module alu_ctrl_unit(
     input [2:0] funct3,
     output reg [3:0] alu_ctrl
 );
+//will set the alu_ctrl signal based on the alu_op, funct7, and funct3 inputs
+
+
     always @(*) begin
     case ({alu_op,funct7, funct3})
         6'b00_0_000: alu_ctrl <= 4'b0010; // LW, SW (ADD)

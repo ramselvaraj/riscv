@@ -7,6 +7,9 @@ module inst_mem(
   output reg [31:0] inst_out
 );
 
+//instruction memory module
+
+
 integer  k;
 reg [31:0] I_Mem[63:0];
 

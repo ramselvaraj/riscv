@@ -8,7 +8,8 @@ module alu(
     output reg zero
 );
 
-
+// will perform the ALU operation specified by the alu_ctrl signal on the inputs rs1 and rs2, and output the result as alu_result
+// zero bit is toggled when sub operation results in zero, used for branch instructions
 
 always @(*) begin
     alu_result = 32'b0;

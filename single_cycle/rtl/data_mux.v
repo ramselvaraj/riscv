@@ -7,6 +7,8 @@ module data_mux(
     output [31:0] reg_write_data
 );
 
+// 
+
     assign reg_write_data = (mem_to_reg) ? mem_data : alu_result;
 
 endmodule // data_mux

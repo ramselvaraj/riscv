@@ -1,6 +1,6 @@
 # RISC-V HDL Implementations
 
-## Single Cycle (Current)
+## Single Cycle (Completed)
 - Textbook followed- 
     - "The Morgan Kaufmann Series in Computer Architecture and Design - RISCV Edition"
 - Implemented in
@@ -13,6 +13,6 @@
 
 - Datapath
     - ![RISC-V Single Cycle Datapath](./images/riscv_sc_datapath.png)
-## Multi Cycle (Future)
+## Multi Cycle (Current)
 
 ## ..... and more 

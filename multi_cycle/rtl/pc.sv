@@ -1,9 +1,9 @@
 module pc_sv(
-    input clk;
-    input reset;
-    input pc_ctrl;
-    input [31:0] pc_next;
-    output [31:0] pc;
+    input clk,
+    input reset,
+    input pc_ctrl,
+    input [31:0] pc_next,
+    output logic [31:0] pc
 );
 
 always_ff @(posedge clk or posedge reset) begin

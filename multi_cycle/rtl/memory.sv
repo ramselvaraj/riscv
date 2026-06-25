@@ -5,7 +5,7 @@ module memory(
     input r_enable,
     input [31:0] adr,
     input [31:0] wd,
-    output [31:0] rd
+    output logic [31:0] rd
 );
 
 

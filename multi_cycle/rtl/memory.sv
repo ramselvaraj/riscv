@@ -9,7 +9,7 @@ module memory(
 );
 
 
-logic [31:0] memdata [64:0];
+    logic [31:0] memdata [0:63];
 integer k;
 
     always_ff @(posedge clk or posedge reset) begin
@@ -21,12 +21,10 @@ integer k;
         end
 
         else if (w_enable) begin
-            memdata[adr] <= wd;
-        end
-
-        else if (r_enable) begin
-            rd <= memdata[adr];
+            memdata[adr[7:2]] <= wd;
         end
 
     end
+
+    assign rd = r_enable ? memdata[adr[7:2]] : 32'b0;
 endmodule //memory

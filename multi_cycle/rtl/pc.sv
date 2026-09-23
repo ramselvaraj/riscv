@@ -10,7 +10,7 @@ always_ff @(posedge clk or posedge reset) begin
    if (reset) begin
         pc <= 0;
    end
-   else if (pc_ctrl) begin //wait till previous instruction is finished to start the next one
+    else if (pc_ctrl) begin
         pc <= pc_next;
    end
 

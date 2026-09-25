@@ -9,11 +9,11 @@
 
    - | R-Type | I-Type | S-Type | B-Type |
      |--------|--------|--------|--------|
-     | ADD, AND, OR    | LW     | SW     | BEQ    |
+     | ADD, SUB, AND, OR    | LW     | SW     | BEQ    |
 
 - Datapath
     - ![RISC-V Single Cycle Datapath](./images/riscv_sc_datapath.png)
-## Multi Cycle (Current)
+## Multi Cycle (Completed)
 - Textbook followed-
     - "Digital Design and Computer Architecture - Second Edition - David Money Harris & Sarah L. Harris"
 - Implemented in

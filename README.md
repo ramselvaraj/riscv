@@ -25,6 +25,6 @@
 - Datapath
     - ![RISC-V Multi Cycle Datapath](./images/riscv_mc_datapath.png)
 - Test
-    - `verilator --binary --timing --top-module tb_riscv_mc -f multi_cycle/files.txt --Mdir /tmp/riscv_mc_obj && /tmp/riscv_mc_obj/Vtb_riscv_mc`
+    - `verilator --binary --timing --top-module tb_riscv_mc -f cpu_multi_cycle/files.txt --Mdir /tmp/riscv_mc_obj && /tmp/riscv_mc_obj/Vtb_riscv_mc`
 
 ## ..... and more 

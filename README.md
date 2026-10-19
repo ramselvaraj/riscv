@@ -11,6 +11,7 @@ pipelined CPU designs.
 | [Single cycle](./single_cycle) | Verilog | Complete | One instruction per clock cycle |
 | [Multi cycle](./multi_cycle) | SystemVerilog | Complete | FSM-controlled instruction execution |
 | [Five-stage pipeline](./pipeline) | SystemVerilog | Complete | Forwarding, stalls, and control-flow flushing |
+| [Cached pipeline](./pipeline_cache) | SystemVerilog | Implemented and simulation-tested | Expanded RV32I integer datapath, variable-latency ports, and blocking I/D caches |
 
 ## Single-Cycle Processor
 
@@ -102,6 +103,29 @@ verilator --binary --timing \
 /tmp/riscv_pipeline_obj/Vtb_riscv_pipeline
 ```
 
+## Cached Pipeline
+
+The separate `pipeline_cache/` design adds the RV32I integer datapath, byte and
+halfword memory operations, and all six branch conditions. It includes
+variable-latency memory interfaces and configurable direct-mapped instruction
+and data caches.
+
+The data cache supports write-through/no-write-allocate and
+write-back/write-allocate. Dirty evictions preserve modified bytes in external
+memory. Retirement traces and counters support correctness checks and performance
+measurements.
+
+Run the differential CPU tests, cache tests, and fault tests:
+
+```bash
+make -f pipeline_cache/Makefile test
+```
+
+See [the cached pipeline guide](./pipeline_cache/README.md) for the interface
+contract, supported instructions, cache parameters, and limitations. This design
+does not implement privileged execution, precise traps, or a complete RV32I
+compliance environment.
+
 ## Repository Layout
 
 ```text
@@ -109,6 +133,7 @@ verilator --binary --timing \
 ├── single_cycle/   # Verilog single-cycle CPU and component tests
 ├── multi_cycle/    # SystemVerilog multi-cycle CPU and integration test
 ├── pipeline/       # SystemVerilog five-stage CPU and integration test
+├── pipeline_cache/ # Cached CPU, variable-latency ports, and differential tests
 └── images/         # Datapath diagrams
 ```
 

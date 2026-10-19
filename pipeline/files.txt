@@ -1,0 +1,15 @@
+./pipeline/tb/tb_riscv_pipeline.sv
+./pipeline/rtl/riscv_pipeline.sv
+./pipeline/rtl/datapath.sv
+./pipeline/rtl/controller.sv
+./pipeline/rtl/alu.sv
+./pipeline/rtl/immediate_generator.sv
+./pipeline/rtl/reg_file.sv
+./pipeline/rtl/instruction_memory.sv
+./pipeline/rtl/data_memory.sv
+./pipeline/rtl/if_id_reg.sv
+./pipeline/rtl/id_ex_reg.sv
+./pipeline/rtl/ex_mem_reg.sv
+./pipeline/rtl/mem_wb_reg.sv
+./pipeline/rtl/forwarding_unit.sv
+./pipeline/rtl/hazard_unit.sv

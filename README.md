@@ -68,6 +68,8 @@ The pipeline implements the standard five execution stages:
 Pipeline state is carried by dedicated `IF/ID`, `ID/EX`, `EX/MEM`, and
 `MEM/WB` register sets.
 
+![RISC-V five-stage pipelined processor](./images/pipelined_proc.png)
+
 ### Supported instructions
 
 - Register ALU: `ADD`, `SUB`, `AND`, `OR`
